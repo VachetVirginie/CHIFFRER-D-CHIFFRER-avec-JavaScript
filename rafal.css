@@ -1,0 +1,95 @@
+
+H1 {
+		font-family: verdana, ms sans serif, arial, geneva, helvetica;
+		font-size: 36px;
+		font-weight: bold;
+		text-align: left;
+		color: #FFFFFF;
+}
+
+H2 {
+		font-family: verdana, ms sans serif, arial, geneva, helvetica;
+		font-size: 16px;
+		text-align: center;
+		font-weight: bold;
+		color: #000000;
+}
+
+
+H3 {
+		font-family: verdana, ms sans serif, arial, geneva, helvetica;
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+		color: #000000;
+}
+
+H4 {
+		font-family: verdana, ms sans serif, arial, geneva, helvetica;
+		font-size: 12px;
+		font-weight: bold;
+		text-align: left;
+		color: #993333;
+}
+
+H5 {
+		font-family: verdana, ms sans serif, arial, geneva, helvetica;
+		font-size: 9px;
+		font-weight: bold;
+		text-align: left;
+		color: #FFFFFF;
+}
+
+
+P {
+		font-family: verdana, ms sans serif, arial, geneva, helvetica;
+		font-size: 12px;
+		font-weight: medium;
+		font-style: normal;
+		color: #000000;
+		text-indent: 0px;
+}
+
+BLOCKQUOTE {
+		font-family: verdana, ms sans serif, arial, geneva, helvetica;
+		font-size: 10px;
+		font-weight: bold;
+		text-align: left;
+		text-indent: 30px;
+}
+
+LI  {
+		font-family: verdana, ms sans serif, arial, geneva, helvetica;
+		font-size: 12px;
+		font-weight: medium;
+}
+
+UL {
+		font-family: verdana, ms sans serif, arial, geneva, helvetica;
+		font-size: 12px;
+		font-weight: medium;
+		color: #000000;
+		text-indent: 5px;
+}
+
+dd {
+		font-family: verdana, ms sans serif, arial, geneva, helvetica;
+		font-size: 12px;
+		font-weight: medium;
+		font-style: normal;
+		color: #000000;
+		text-align: left;
+		text-indent: 0px;
+}
+
+DIV {
+		font-family:  verdana, ms sans serif, arial, geneva, helvetica;
+		font-size: 12px;
+		font-weight: medium;
+		color: #blue;
+		margin-left: 10px;
+		position: relative;
+}
+
+a {text-decoration: none}
+a:hover {color:red; text-decoration:none;} 

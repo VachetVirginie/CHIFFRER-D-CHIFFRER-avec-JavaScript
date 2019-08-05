@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//fr">
+<html data-scrapbook-source="http://www.minelinks.com/supercode/2cryptoolE_fr.html?written=Ecrivez+oy*-hiz*icsr+l+%5Eib%5E%E0pfnfl%40h-vh%5Eni%3A%0D%0AA%40%5Etel%5Ea*xlaa-a%E7%26yfaoedqj+%25rnryttgopi-efloas%2Bmuhlabz%26bo%40sser+versbka%40-%24fqf%23%26sa%40yzmf%25wawrksfiw%24%5Emly.&amp;codeWord=hello+world" data-scrapbook-create="20190802132839259">
+<head>
+ 
+<meta name="MSSmartTagsPreventParsing" content="true">
+<link rel="stylesheet" type="text/css" href="rafal.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>CHIFFRER / DÉCHIFFRER avec JavaScript</title>
+<script>
+<!--
+document.write(unescape("%3Cscript%20LANGUAGE%3D%22JavaScript%22%3E%0D%0A%3C%21--%20Begin%0D%0Avar%20TID%20%3D%200%3B%0D%0Avar%20longer%20%3D%200%3B%0D%0Avar%20thirdwrite%20%3D%20%22%22%3B%0D%0Avar%20alphabet%20%3D%20new%20Array%28%220@%22%2C%221%23%22%2C%222%24%22%2C%223%25%22%2C%224%5E%22%2C%225%26%22%2C%226*%22%2C%227%20%3D%20%22%2C%228-%22%2C%229+%22%2C%22Aa%22%2C%22Bb%22%2C%22Cc%22%2C%22Dd%22%2C%22Ee%22%2C%22Ff%22%2C%22Gg%22%2C%22Hh%22%2C%22Ii%22%2C%22Jj%22%2C%22Kk%22%2C%22Ll%22%2C%22Mm%22%2C%22Nn%22%2C%22Oo%22%2C%22Pp%22%2C%22Qq%22%2C%22Rr%22%2C%22Ss%22%2C%22Tt%22%2C%22Uu%22%2C%22Vv%22%2C%22Ww%22%2C%22Xx%22%2C%22Yy%22%2C%22Zz%22%29%3B%0D%0Afunction%20preTime%28coco%2C%20uinput%2C%20question%29%20%7B%0D%0Alonger%20%3D%20coco.length%20-%201%3B%0D%0Aplacement%20%3D%200%3B%0D%0Aref%20%3D%200%20%3B%0D%0AsecondWrite%20%3D%20%22%22%3B%0D%0AfirstWrite%20%3D%20%22%22%3B%0D%0AthirdWrite%20%3D%20%22%22%3B%0D%0Acode1%28coco%2C%20uinput%2C%20longer%2C%20question%29%3B%0D%0A%7D%0D%0Afunction%20findshift%28letter%29%20%7B%0D%0Afor%20%28i%20%3D%200%3B%20i%20%3C%2036%3B%20i++%29%20%7B%0D%0Aif%20%28%28alphabet%5Bi%5D.substring%280%2C1%29%20%3D%3D%20letter%29%20%7C%7C%20%28alphabet%5Bi%5D.substring%281%2C2%29%20%3D%3D%20letter%29%29%20%7B%0D%0Aif%20%28alphabet%5Bi%5D.substring%280%2C1%29%20%3D%3D%20letter%29%20%7B%0D%0Ax%20%3D%200%3B%0D%0A%7D%0D%0Aif%20%28alphabet%5Bi%5D.substring%281%2C2%29%20%3D%3D%20letter%29%20%7B%0D%0Ax%20%3D%201%3B%0D%0A%7D%0D%0Areturn%20i%3B%0D%0A%20%20%20%20%20%20%7D%0D%0A%20%20%20%7D%0D%0A%7D%0D%0Afunction%20check%28letter%29%20%7B%0D%0Abill%20%3D%20%22no%22%3B%0D%0Afor%20%28i%20%3D%200%3B%20i%20%3C%2036%3B%20i++%29%20%7B%0D%0Aif%20%28%28alphabet%5Bi%5D.substring%280%2C1%29%20%3D%3D%20letter%29%20%7C%7C%20%28alphabet%5Bi%5D.substring%281%2C2%29%20%3D%3D%20letter%29%29%20%7B%0D%0Abill%20%3D%20%22yes%22%3B%0D%0A%20%20%20%7D%0D%0A%7D%0D%0Aif%20%28bill%20%3D%3D%20%22yes%22%29%20%7B%0D%0Areturn%20true%3B%0D%0A%7D%0D%0Aelse%20%7B%0D%0Areturn%20false%3B%0D%0A%20%20%20%7D%0D%0A%7D%0D%0Afunction%20fixoffset%28takin%29%20%7B%0D%0Aif%20%28takin%20%3E%2035%29%20%7B%0D%0Areturn%20%28takin%20-%2036%29%3B%0D%0A%7D%0D%0Aelse%20%7B%0D%0Areturn%20takin%3B%0D%0A%20%20%20%7D%0D%0A%7D%0D%0Afunction%20code1%28inval1%2Cinval2%2Cinval3%2Csage%29%20%7B%0D%0Aif%20%28check%28inval2.charAt%28placement%29%29%29%20%7B%0D%0Aif%20%28check%28inval1.charAt%28ref%29%29%29%20%7B%0D%0Aif%20%28sage%20%3D%3D%200%29%20%7B%20%0D%0Ashift%20%3D%20findshift%28inval1.charAt%28ref%29%29%3B%0D%0A%7D%0D%0Aif%20%28sage%20%3D%3D%201%29%20%7B%20%0D%0Ashift%20%3D%2036%20-%20findshift%28inval1.charAt%28ref%29%29%3B%0D%0A%20%20%20%7D%0D%0A%7D%0D%0Aelse%20%7B%0D%0Ashift%20%3D%200%3B%0D%0A%7D%0D%0Aorig%20%3D%20findshift%28inval2.charAt%28placement%29%29%3B%0D%0AfirstWrite%20%3D%20firstWrite+alphabet%5Bfixoffset%28orig+shift%29%5D.charAt%28x%29%3B%0D%0A%7D%0D%0Aelse%20%7B%0D%0AfirstWrite%20%3D%20firstWrite+inval2.charAt%28placement%29%3B%0D%0A%7D%0D%0AsecondWrite%20%3D%20inval2.substring%28placement+1%2Cinval2.length+1%29%3B%0D%0AthirdWrite%20%3D%20firstWrite+secondWrite%3B%0D%0Adocument.inputo.written.value%20%3D%20thirdWrite%3B%0D%0Aplacement++%3B%0D%0Aif%20%28ref%20%3D%3D%20inval3%29%20%7B%0D%0Aref%20%3D%200%0D%0A%7D%0D%0Aelse%20%7B%0D%0Aref++%3B%0D%0A%7D%0D%0Aif%20%28placement%20%3D%3D%20%28inval2.length%29%29%20%7B%0D%0Awindow.clearTimeout%28TID%29%3B%0D%0Areturn%20false%3B%0D%0A%7D%0D%0Aone%20%3D%20inval1%3B%0D%0Atwo%20%3D%20inval2%3B%0D%0Athree%20%3D%20inval3%3B%0D%0Agoer%20%3D%20sage%3B%0D%0ATID%20%3D%20window.setTimeout%28%22code1%28one%2C%20two%2C%20three%2C%20goer%29%22%2C%200%29%3B%0D%0A%7D%0D%0A//%20%20End%20--%3E%0D%0A%3C/script%3E%0D%0A"));
+//-->
+</script><script language="JavaScript">
+<!-- Begin
+var TID = 0;
+var longer = 0;
+var thirdwrite = "";
+var alphabet = new Array("0@","1#","2$","3%","4^","5&","6*","7 = ","8-","9+","Aa","Bb","Cc","Dd","Ee","Ff","Gg","Hh","Ii","Jj","Kk","Ll","Mm","Nn","Oo","Pp","Qq","Rr","Ss","Tt","Uu","Vv","Ww","Xx","Yy","Zz");
+function preTime(coco, uinput, question) {
+longer = coco.length - 1;
+placement = 0;
+ref = 0 ;
+secondWrite = "";
+firstWrite = "";
+thirdWrite = "";
+code1(coco, uinput, longer, question);
+}
+function findshift(letter) {
+for (i = 0; i < 36; i++) {
+if ((alphabet[i].substring(0,1) == letter) || (alphabet[i].substring(1,2) == letter)) {
+if (alphabet[i].substring(0,1) == letter) {
+x = 0;
+}
+if (alphabet[i].substring(1,2) == letter) {
+x = 1;
+}
+return i;
+      }
+   }
+}
+function check(letter) {
+bill = "no";
+for (i = 0; i < 36; i++) {
+if ((alphabet[i].substring(0,1) == letter) || (alphabet[i].substring(1,2) == letter)) {
+bill = "yes";
+   }
+}
+if (bill == "yes") {
+return true;
+}
+else {
+return false;
+   }
+}
+function fixoffset(takin) {
+if (takin > 35) {
+return (takin - 36);
+}
+else {
+return takin;
+   }
+}
+function code1(inval1,inval2,inval3,sage) {
+if (check(inval2.charAt(placement))) {
+if (check(inval1.charAt(ref))) {
+if (sage == 0) { 
+shift = findshift(inval1.charAt(ref));
+}
+if (sage == 1) { 
+shift = 36 - findshift(inval1.charAt(ref));
+   }
+}
+else {
+shift = 0;
+}
+orig = findshift(inval2.charAt(placement));
+firstWrite = firstWrite+alphabet[fixoffset(orig+shift)].charAt(x);
+}
+else {
+firstWrite = firstWrite+inval2.charAt(placement);
+}
+secondWrite = inval2.substring(placement+1,inval2.length+1);
+thirdWrite = firstWrite+secondWrite;
+document.inputo.written.value = thirdWrite;
+placement++;
+if (ref == inval3) {
+ref = 0
+}
+else {
+ref++;
+}
+if (placement == (inval2.length)) {
+window.clearTimeout(TID);
+return false;
+}
+one = inval1;
+two = inval2;
+three = inval3;
+goer = sage;
+TID = window.setTimeout("code1(one, two, three, goer)", 0);
+}
+//  End -->
+</script>
+
+
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body bgcolor="#07487d">
+<table width="600" align="center">
+<tbody><tr><td>
+<h3><font color="White">CHIFFRER / DÉCHIFFRER avec JavaScript</font><font color="#FF0000">*</font> <a href="http://www.minelinks.com/supercode/2cryptoolE_es.html"><img src="flages.jpg" width="20" height="28" border="1" alt="la versíon española"></a> <a href="http://www.minelinks.com/supercode/2cryptoolE.html"><img src="flagen.jpg" width="20" height="28" border="1" alt="the english version"></a></h3>
+<table bgcolor="silver" border="8" cellpadding="8" bordercolor="#ff9900" align="center">
+<tbody><tr><td bgcolor="gray">
+<form name="inputo">
+<p>Texte:<br>
+<textarea name="written" rows="12" cols="80">Ecrivez ou collez le texte à chiffrer ici:
+La meilleure façon de lutter contre le mal est de progresser vers le bon aussi rapide que possible.</textarea>
+</p><p>Phrase clef:&nbsp;<input type="text" name="codeWord" value="Mettez code phrase ici" size="40">&nbsp;&nbsp;<input type="button" value="Encodez" onclick="preTime(codeWord.value,written.value, 0);">&nbsp;<input type="button" value="Decodez" onclick="preTime(codeWord.value,written.value, 1);">
+</p></form>
+
+<p>
+
+</p></td></tr>
+</tbody></table>
+<p>
+</p></td></tr>
+</tbody></table>
+
+
+
+</body>
+</html>
